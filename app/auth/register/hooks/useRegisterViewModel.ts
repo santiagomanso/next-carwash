@@ -24,24 +24,25 @@ export default function useRegisterViewModel() {
   const onSubmit = React.useCallback(
     (values: z.infer<typeof RegisterSchema>) => {
       setState({
-        ...state,
         isLoading: true,
       });
 
       signup(values)
         .then((response) => {
+          console.log('response', response);
           setState({
+            isLoading: false,
             isError: response.error,
             message: response.message,
           });
         })
-        .finally(() => {
+        .catch(() => {
           setState({
             isLoading: false,
           });
         });
     },
-    [setState, state],
+    [setState],
   );
 
   const form = useForm<z.infer<typeof RegisterSchema>>({

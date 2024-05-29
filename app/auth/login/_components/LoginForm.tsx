@@ -1,12 +1,6 @@
 'use client';
-import React, { startTransition } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { useForm } from 'react-hook-form';
-import * as z from 'zod';
-import { LoginSchema } from '../../_schemas';
-
 import {
   Form,
   FormControl,
@@ -15,48 +9,25 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
-import { zodResolver } from '@hookform/resolvers/zod';
 import ResponseMsg from './ResponseMsg';
-import { login } from '@/actions/auth/login';
+import useLoginViewModel from '../useLoginViewModel';
+import Spinner from '@/components/ui/spinner';
 
-type State = {
-  error: boolean;
-  message: string;
+type Props = {
+  viewModel: ReturnType<typeof useLoginViewModel>;
 };
 
-const LoginForm = () => {
-  const [isPending, starTransition] = React.useTransition();
-  const [state, setState] = React.useState<State>({
-    error: false,
-    message: '',
-  });
-
-  const form = useForm<z.infer<typeof LoginSchema>>({
-    resolver: zodResolver(LoginSchema),
-    defaultValues: {
-      email: '',
-      password: '',
-    },
-  });
-
-  const onSubmit = (values: z.infer<typeof LoginSchema>) => {
-    startTransition(() => {
-      login(values).then((response) => {
-        setState({
-          error: response.error,
-          message: response.message,
-        });
-      });
-    });
-  };
-
+const LoginForm = ({ viewModel }: Props) => {
   return (
-    <Form {...form}>
-      <form className='space-y-4' onSubmit={form.handleSubmit(onSubmit)}>
+    <Form {...viewModel.form}>
+      <form
+        className='space-y-4'
+        onSubmit={viewModel.form.handleSubmit(viewModel.onSubmit)}
+      >
         <FormField
-          control={form.control}
+          control={viewModel.form.control}
           name='email'
-          disabled={isPending}
+          disabled={viewModel.isLoading}
           render={({ field }) => (
             <FormItem>
               <FormLabel htmlFor='email'>Email</FormLabel>
@@ -69,9 +40,9 @@ const LoginForm = () => {
         />
 
         <FormField
-          control={form.control}
+          control={viewModel.form.control}
           name='password'
-          disabled={isPending}
+          disabled={viewModel.isLoading}
           render={({ field }) => (
             <FormItem>
               <FormLabel htmlFor='password'>Password</FormLabel>
@@ -87,10 +58,15 @@ const LoginForm = () => {
           )}
         />
 
-        <ResponseMsg message={state.message} error={state.error} />
+        <ResponseMsg message={viewModel.message} error={viewModel.error} />
 
-        <Button className='w-full' disabled={isPending} type='submit'>
+        <Button
+          className={'w-full flex items-center gap-2'}
+          disabled={viewModel.isLoading}
+          type='submit'
+        >
           Sign In
+          {viewModel.isLoading && <Spinner />}
         </Button>
       </form>
     </Form>
