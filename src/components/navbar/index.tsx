@@ -13,7 +13,7 @@ import {
 
 export default function Navbar() {
   return (
-    <header className='fixed top-0 left-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-gray-900 shadow'>
+    <header className='fixed top-0 left-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-gray-900/90 shadow'>
       <div className='container mx-auto flex h-16 items-center justify-between px-4 md:px-6'>
         <div className='flex items-center gap-2'>
           <Assets.icons.CarWhite className='w-10 h-10' />
@@ -21,28 +21,28 @@ export default function Navbar() {
         </div>
         <nav className='hidden md:flex items-center gap-6'>
           <Link
-            href='#'
+            href='#home'
             className='relative text-sm dark:text-gray-300 font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50 [&.active]:after:absolute [&.active]:after:-bottom-1 [&.active]:after:left-0 [&.active]:after:h-0.5 [&.active]:after:w-full [&.active]:after:bg-gray-900 [&.active].dark:after:bg-gray-50'
             prefetch={false}
           >
             Home
           </Link>
           <Link
-            href='#'
+            href='#features'
             className='relative text-sm dark:text-gray-300 font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50 [&.active]:after:absolute [&.active]:after:-bottom-1 [&.active]:after:left-0 [&.active]:after:h-0.5 [&.active]:after:w-full [&.active]:after:bg-gray-900 [&.active].dark:after:bg-gray-50'
             prefetch={false}
           >
             Features
           </Link>
           <Link
-            href='#'
+            href='#pricing'
             className='relative text-sm dark:text-gray-300 font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50 [&.active]:after:absolute [&.active]:after:-bottom-1 [&.active]:after:left-0 [&.active]:after:h-0.5 [&.active]:after:w-full [&.active]:after:bg-gray-900 [&.active].dark:after:bg-gray-50'
             prefetch={false}
           >
             Pricing
           </Link>
           <Link
-            href='#'
+            href='#contact'
             className='relative text-sm dark:text-gray-300 font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50 [&.active]:after:absolute [&.active]:after:-bottom-1 [&.active]:after:left-0 [&.active]:after:h-0.5 [&.active]:after:w-full [&.active]:after:bg-gray-900 [&.active].dark:after:bg-gray-50'
             prefetch={false}
           >

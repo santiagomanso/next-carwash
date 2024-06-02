@@ -43,7 +43,7 @@ const germanContent = (
 export default function LanguageSwitcher() {
   const [language, setLanguage] = useState('spanish');
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button
           variant='outline'

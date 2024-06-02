@@ -36,7 +36,7 @@ const systemContent = (
 export default function ThemeSwitcher() {
   const { setTheme, theme } = useTheme();
   return (
-    <DropdownMenu>
+    <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
         <Button
           variant='outline'
