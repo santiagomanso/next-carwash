@@ -1,11 +1,25 @@
 import Navbar from '@/components/navbar';
-import LandingPageHero from './_components/hero-section';
+import {
+  LandingCarousel,
+  LandingContact,
+  LandingFeatures,
+  LandingPricing,
+  LandingTestimonials,
+} from './_landing-page-components';
 
 export default function Splash() {
   return (
     <>
       <Navbar />
-      <LandingPageHero />
+      <section className='w-full pt-12 md:pt-24 lg:pt-32 dark:bg-gray-950'>
+        <div className=' space-y-10 xl:space-y-16 '>
+          <LandingCarousel />
+          <LandingFeatures />
+          <LandingPricing />
+          <LandingTestimonials />
+          <LandingContact />
+        </div>
+      </section>
     </>
   );
 }

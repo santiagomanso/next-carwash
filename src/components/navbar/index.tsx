@@ -42,6 +42,13 @@ export default function Navbar() {
             Pricing
           </Link>
           <Link
+            href='#testimonials'
+            className='relative text-sm dark:text-gray-300 font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50 [&.active]:after:absolute [&.active]:after:-bottom-1 [&.active]:after:left-0 [&.active]:after:h-0.5 [&.active]:after:w-full [&.active]:after:bg-gray-900 [&.active].dark:after:bg-gray-50'
+            prefetch={false}
+          >
+            testimonials
+          </Link>
+          <Link
             href='#contact'
             className='relative text-sm dark:text-gray-300 font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50 [&.active]:after:absolute [&.active]:after:-bottom-1 [&.active]:after:left-0 [&.active]:after:h-0.5 [&.active]:after:w-full [&.active]:after:bg-gray-900 [&.active].dark:after:bg-gray-50'
             prefetch={false}
