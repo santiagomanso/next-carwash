@@ -13,7 +13,7 @@ import {
 
 export default function Navbar() {
   return (
-    <header className='fixed top-0 left-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-gray-900/90 shadow'>
+    <header className='fixed top-0 left-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-gray-800/95 shadow dark:shadow-gray-900'>
       <div className='container mx-auto flex h-16 items-center justify-between px-4 md:px-6'>
         <div className='flex items-center gap-2'>
           <Assets.icons.CarWhite className='w-10 h-10' />
@@ -59,7 +59,11 @@ export default function Navbar() {
         <div className='flex items-center gap-2'>
           <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
-              <Button variant='outline' size='icon'>
+              <Button
+                variant='outline'
+                size='icon'
+                className='dark:bg-gray-800  dark:hover:bg-gray-950'
+              >
                 <Assets.icons.Settings className='w-6 h-6  dark:fill-white' />
                 <span className='sr-only'>Settings</span>
               </Button>
@@ -77,7 +81,7 @@ export default function Navbar() {
           </DropdownMenu>
           <Link
             href='/dashboard'
-            className='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
+            className='inline-flex items-center dark:hover:bg-gray-950 justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
             border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-3'
             prefetch={false}
           >

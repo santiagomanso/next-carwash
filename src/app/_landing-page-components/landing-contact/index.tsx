@@ -5,7 +5,7 @@ export default function LandingContact() {
     <section className='  w-full py-12 md:py-24 lg:py-32' id='contact'>
       <div className='container px-4 md:px-6'>
         <div className='flex flex-col items-center justify-center space-y-4 text-center  md:max-w-2xl md:px-14 md:py-10 md:mx-auto'>
-          <div className='inline-block rounded-lg bg-gray-100 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
+          <div className='inline-block bg-white border-slate-400 rounded-lg  border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
             Contact Us
           </div>
           <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>

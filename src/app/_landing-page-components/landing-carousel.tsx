@@ -10,14 +10,14 @@ import Image from 'next/image';
 
 export default function LandingCarousel() {
   return (
-    <section className='w-full py-12 md:py-24 lg:py-32' id='home'>
+    <section className='w-full py-12 md:py-24 lg:py-48' id='home'>
       <div className='container'>
         <Carousel className='w-full'>
           <CarouselContent>
             <CarouselItem>
               <div className='grid gap-4 px-4 md:grid-cols-2 md:gap-16'>
                 <div>
-                  <div className='inline-block rounded-lg bg-gray-100 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
+                  <div className='inline-block rounded-lg bg-white border-slate-400 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
                     Notifications
                   </div>
                   <h2 className='mt-4 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
@@ -38,7 +38,7 @@ export default function LandingCarousel() {
             <CarouselItem>
               <div className='grid gap-4 px-4 md:grid-cols-2 md:gap-16'>
                 <div>
-                  <div className='inline-block rounded-lg bg-gray-100 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
+                  <div className='inline-block rounded-lg bg-white border-slate-400 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
                     Multi-vehicles
                   </div>
                   <h2 className='mt-4 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
@@ -78,7 +78,7 @@ export default function LandingCarousel() {
             <CarouselItem>
               <div className='grid gap-4 px-4 md:grid-cols-2 md:gap-16'>
                 <div>
-                  <div className='inline-block rounded-lg bg-gray-100 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
+                  <div className='inline-block rounded-lg bg-white border-slate-400 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
                     Before/After Results
                   </div>
                   <h2 className='mt-4 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>

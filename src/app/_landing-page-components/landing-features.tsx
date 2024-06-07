@@ -1,13 +1,13 @@
 export default function LandingFeatures() {
   return (
     <section
-      className='w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800'
+      className='w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-800'
       id='features'
     >
       <div className='container px-4 md:px-6'>
         <div className='flex flex-col items-center justify-center space-y-4 text-center'>
           <div className='space-y-2'>
-            <div className='inline-block border-[1px] dark:border-slate-700/70 rounded-md bg-white px-3 py-1 text-sm dark:bg-gray-900'>
+            <div className='inline-block bg-gray-100 border-slate-400 border-[1px] dark:border-slate-700/70 rounded-md  px-3 py-1 text-sm dark:bg-gray-900'>
               Features
             </div>
             <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
