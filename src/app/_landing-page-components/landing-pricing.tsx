@@ -6,7 +6,7 @@ export default function LandingPricing() {
       <div className='container px-4 md:px-6'>
         <div className='flex flex-col items-center justify-center space-y-4 text-center'>
           <div className='space-y-2'>
-            <div className='inline-block rounded-lg bg-gray-100 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
+            <div className='inline-block rounded-lg bg-white border-slate-400 border-[1px] dark:border-gray-700/70 px-3 py-1 text-sm dark:bg-gray-800'>
               Pricing
             </div>
             <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
