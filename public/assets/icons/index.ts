@@ -1,15 +1,15 @@
-import Google from './svg/Google.svg';
-import Apple from './svg/Apple.svg';
-import Email from './svg/Email.svg';
-import CarWhite from './svg/CarWhite.svg';
-import Usa from './svg/Usa.svg';
-import Germany from './svg/Germany.svg';
-import Spain from './svg/Spain.svg';
-import Sun from './svg/Sun.svg';
-import Moon from './svg/Moon.svg';
-import Settings from './svg/Settings.svg';
-import Plus from './svg/Plus.svg';
-import Laptop from './svg/Laptop.svg';
+import Google from './svg/google.svg';
+import Apple from './svg/apple.svg';
+import Email from './svg/email.svg';
+import CarWhite from './svg/carWhite.svg';
+import Usa from './svg/usa.svg';
+import Germany from './svg/germany.svg';
+import Spain from './svg/spain.svg';
+import Sun from './svg/sun.svg';
+import Moon from './svg/moon.svg';
+import Settings from './svg/settings.svg';
+import Plus from './svg/plus.svg';
+import Laptop from './svg/laptop.svg';
 
 export const icons = {
   Google,
