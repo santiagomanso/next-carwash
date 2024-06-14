@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import { Assets } from '@/assets';
 import ThemeSwitcher from './theme-switcher';
 import { Button } from '@/components/ui/button';
 import LanguageSwitcher from './language-switcher';
@@ -10,6 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuLabel,
 } from '@/components/ui/dropdown-menu';
+import { Assets } from '../../../public/assets';
 
 export default function Navbar() {
   return (

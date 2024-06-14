@@ -1,4 +1,3 @@
-import { Assets } from '@/assets';
 import {
   Carousel,
   CarouselContent,
@@ -7,6 +6,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import Image from 'next/image';
+import { Assets } from '../../../public/assets';
 
 export default function LandingCarousel() {
   return (
