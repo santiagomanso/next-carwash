@@ -1,4 +1,4 @@
-import Google from './svg/google.svg';
+import Google from './svg/Google.svg';
 import Apple from './svg/Apple.svg';
 import Email from './svg/Email.svg';
 import CarWhite from './svg/CarWhite.svg';
