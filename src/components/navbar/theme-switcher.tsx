@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { useTheme } from 'next-themes';
-import { Assets } from '@/assets';
+import { Assets } from '../../../public/assets';
 
 const lightContent = (
   <div className='flex items-center gap-2'>

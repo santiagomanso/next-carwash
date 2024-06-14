@@ -1,13 +1,5 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/8Y82fPe407W
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Assets } from '@/assets';
+
 import RegisterForm from './_components/RegisterForm';
 
 export default function Component() {

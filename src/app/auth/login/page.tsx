@@ -1,9 +1,9 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Assets } from '@/assets';
 import LoginForm from './_components/LoginForm';
 import useLoginViewModel from './useLoginViewModel';
+import { Assets } from '../../../../public/assets';
 
 export default function Component() {
   const viewModel = useLoginViewModel();
